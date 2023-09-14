@@ -29,3 +29,13 @@ const {Product}= useProductContext();
    })
 
 ```
+## Add to cart functionality 
+
+create cart context 
+add product into a cart 
+display a product with their prices and product details 
+add cart product into a localstorage for fetching and retreiving back 
+
+## responsive 
+
+add media queries for responsiveness 
