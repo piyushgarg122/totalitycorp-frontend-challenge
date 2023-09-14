@@ -16,3 +16,16 @@ use usestate hook for state management
 
 ## filter the product 
 use usestate hook for state management 
+apply filter method for filtering products by categories 
+```bash
+const {Product}= useProductContext();
+    const [val,setval]= useState("");
+     const changedata=(e)=>{
+     setval(e.target.innerText);
+  }
+   if(val.toLowerCase()==="all") setval("");
+   const Filter_Products= Product.filter((element)=>{
+       if(element.category.toLowerCase().includes(val.toLowerCase())) return element;
+   })
+
+```
